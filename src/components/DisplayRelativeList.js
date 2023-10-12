@@ -10,10 +10,10 @@ const DisplayRelativeList = () => {
     return (
         <div>
             <h1>Diwali visiting list</h1>
-            <ol>
+            <ol id='relativeList'>
                 {
                     relativeList.map((relative,index)=>(
-                        <li key={`relativeListItem{index+1}`}>
+                        <li key={`relativeListItem${index+1}`}>
                             {relative}
                         </li>
                     ))
